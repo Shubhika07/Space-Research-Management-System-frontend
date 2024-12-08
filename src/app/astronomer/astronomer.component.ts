@@ -44,7 +44,7 @@ export class AstronomerComponent implements OnInit {
   projectPlanRecords: any[] = [];
   performanceDataRecords: any[] = [];
 
-  private apiUrl = 'http://localhost:5007/api'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api'; // Replace with your backend endpoint
   private currentUser = '';
   constructor(private http: HttpClient, private dialog: MatDialog) {}
 

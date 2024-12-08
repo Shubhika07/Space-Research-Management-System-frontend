@@ -26,7 +26,7 @@ export class EquipmentComponent {
   equipmentForm: FormGroup; // Reactive form for equipment
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedEquipment: Equipment | null = null; // Currently selected equipment
-  private apiUrl = 'http://localhost:5007/api/Equipment'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/Equipment'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

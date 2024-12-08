@@ -25,7 +25,7 @@ export class CostDialogComponent {
   costDataForm: FormGroup; // Reactive form for cost data
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedCostData: CostData | null = null; // Currently selected cost data
-  private apiUrl = 'http://localhost:5007/api/Cost'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/Cost'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

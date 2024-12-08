@@ -41,7 +41,8 @@ export class MainLayoutComponent {
   }
 
   claimReq = claimReq;
-  private apiUrl = 'http://localhost:5007/api';
+  private apiUrl =
+    'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api';
   public role = '';
 
   ngOnInit(): void {
@@ -64,6 +65,7 @@ export class MainLayoutComponent {
   }
 
   initializeNavLinks(): void {
+    console.log('role', this.role);
 
     this.navLinks = [
       { path: '/admin-only', label: 'Admin Only' },
@@ -73,11 +75,13 @@ export class MainLayoutComponent {
       { path: '/research-assistant', label: 'Research Assistant' },
       { path: '/astronomer', label: 'Astronomer' },
       // Show the 'notification' link only for ADMIN or MISSION_DIRECTOR (but not for TEACHER)
-      ...(this.role === 'ADMIN' || this.role === 'MISSION_DIRECTOR'
+      ...(this.role == 'ADMIN' || this.role == 'MISSION_DIRECTOR'
         ? [{ path: '/notification', label: 'Notification' }]
         : []),
       // Show the 'notifications' link for users who are not ADMIN, MISSION_DIRECTOR, or TEACHER
-      ...(this.role !== 'ADMIN' && this.role !== 'MISSION_DIRECTOR' && this.role !== 'TEACHER'
+      ...(this.role !== 'ADMIN' &&
+      this.role !== 'MISSION_DIRECTOR' &&
+      this.role !== 'TEACHER'
         ? [{ path: '/notifications', label: 'Notification' }]
         : []),
     ];

@@ -26,7 +26,7 @@ export class SafetyDialogComponent {
   safetyDataForm: FormGroup; // Reactive form for safety data
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedSafetyData: SafetyData | null = null; // Currently selected safety data
-  private apiUrl = 'http://localhost:5007/api/SafetyData'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/SafetyData'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

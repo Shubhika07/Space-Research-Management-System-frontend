@@ -21,7 +21,7 @@ interface User {
 export class UserManagementComponent {
   userForm: FormGroup; // Reactive form for user data
   isEditMode: boolean = false; // To differentiate between add and edit mode
-  private apiUrl = 'http://localhost:5007/api/Users'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/api/Users'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

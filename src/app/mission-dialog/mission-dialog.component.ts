@@ -27,7 +27,7 @@ export class MissionsComponent {
   missionForm: FormGroup; // Reactive form for mission
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedMission: Mission | null = null; // Currently selected mission
-  private apiUrl = 'http://localhost:5007/api/Mission'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/Mission'; // Replace with your backend endpoint
   constructor(
     private fb: FormBuilder,
     private http: HttpClient,

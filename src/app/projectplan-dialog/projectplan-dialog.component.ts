@@ -28,7 +28,7 @@ export class ProjectPlanComponent {
   projectPlanForm: FormGroup; // Reactive form for project plan
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedProjectPlan: ProjectPlan | null = null; // Currently selected project plan
-  private apiUrl = 'http://localhost:5007/api/ProjectPlan'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/ProjectPlan'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

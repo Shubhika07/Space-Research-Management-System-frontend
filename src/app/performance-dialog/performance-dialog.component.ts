@@ -26,7 +26,7 @@ export class PerformanceDataComponent {
   performanceDataForm: FormGroup; // Reactive form for mission data
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedPerformanceData: PerformanceData | null = null; // Currently selected mission data
-  private apiUrl = 'http://localhost:5007/api/PerformanceData'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/PerformanceData'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

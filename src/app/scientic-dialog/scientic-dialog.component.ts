@@ -26,7 +26,7 @@ export class ScientificDataComponent {
   scientificDataForm: FormGroup; // Reactive form for scientific data
   isEditMode: boolean = false; // To differentiate between add and edit mode
   selectedScientificData: ScientificData | null = null; // Currently selected scientific data
-  private apiUrl = 'http://localhost:5007/api/ScientificData'; // Replace with your backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/ScientificData'; // Replace with your backend endpoint
 
   constructor(
     private fb: FormBuilder,

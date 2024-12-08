@@ -24,7 +24,7 @@ export class NotificationDialogComponent {
   notificationForm: FormGroup; // Reactive form
   isEditMode: boolean = false; // Add/Edit mode
   selectedNotification: NotificationData | null = null; // Current notification
-  private apiUrl = 'http://localhost:5007/api/Notification'; // Backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/Notification'; // Backend endpoint
 
   constructor(
     private fb: FormBuilder,

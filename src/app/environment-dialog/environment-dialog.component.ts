@@ -25,7 +25,7 @@ export class EnvironmentDialogComponent {
   environmentDataForm: FormGroup; // Reactive form
   isEditMode: boolean = false; // Add/Edit mode
   selectedEnvironmentData: EnvironmentData | null = null; // Current data
-  private apiUrl = 'http://localhost:5007/api/Environment'; // Backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/Environment'; // Backend endpoint
 
   constructor(
     private fb: FormBuilder,

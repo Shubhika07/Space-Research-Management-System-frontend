@@ -24,7 +24,7 @@ export class ReportDialogComponent {
   reportDataForm: FormGroup; // Reactive form
   isEditMode: boolean = false; // Add/Edit mode
   selectedReportData: ReportData | null = null; // Current report data
-  private apiUrl = 'http://localhost:5007/api/Report'; // Backend endpoint
+  private apiUrl = 'https://space-management-system-e0f7bmevhmevg0gv.westindia-01.azurewebsites.net/api/Report'; // Backend endpoint
 
   constructor(
     private fb: FormBuilder,
